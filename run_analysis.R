@@ -57,15 +57,8 @@ merged_filtered_df$activity <- factor(merged_filtered_df$activity, levels = acti
                                        labels= activity_names_df[,2])
 
 #################### 4.Appropriately labels the data set with descriptive variable names.  ####################
-## The mapping between the original variable names and the descriptive variable names are 
-## done and kept in a text file, namely 'feature_names_mapping.txt'. This text file must 
-## be present in the working directory.
-
-#reading the descriptive variable names from 'feature_names_mapping.txt' file
-feature_names_mapping_df <- read.table("./feature_names_mapping.txt", header=TRUE, sep="\t")
-
-#setting the descriptive variable names in the data set
-colnames(merged_filtered_df) <- feature_names_mapping_df[,c("DescriptiveName")]
+## This task is already done as part of the Step-1 where all the feature names are read from
+## the 'features.txt' file and datasets are labeled appropriately.    
 
 #################### 5.From the data set in step 4, creates a second, independent tidy data set  ####################
 ####################    with the average of each variable for each activity and each subject.  ####################
