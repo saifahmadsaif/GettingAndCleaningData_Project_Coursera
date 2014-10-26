@@ -28,7 +28,8 @@ However, the synopsis is given below:
 > - 'test/X_test.txt': Test set.
 > - 'test/y_test.txt': Test labels.
 > - 'test/subject_test.txt': Identifiers of the Subjects in the test data(Its range is from 1 to 30).
-##  The repo contains the following files: ##
+
+##  The repo contains the following files:
 
 **1. 'run_analysis.R' :** This R script does the following:
 
